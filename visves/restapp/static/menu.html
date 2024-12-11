@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <nav>
+      <a href="index.html">About Me</a>
+      <a href="menu.html">Menu</a>
+      <a href="admin.html">Administration</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <img src="menuuuu.jpg" alt="Menu Banner" class="menu-banner">
+    <h2>Delicious Dishes</h2>
+    <div class="menu-grid">
+      <div class="menu-item" onclick="showDetails('Pizza', 'images/pizza.jpg')">
+        <img src="piz.jpeg" alt="Pizza">
+        <p>Pizza</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Burger', 'images/burger.jpg')">
+        <img src="bur.jpeg" alt="Burger">
+        <p>Burger</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Pasta', 'images/pasta.jpg')">
+        <img src="pas.jpeg" alt="Pasta">
+        <p>Pasta</p>
+      </div>
+      <div class="menu-item" onclick="showDetails('Salad', 'images/salad.jpg')">
+        <img src="sal.jpeg"Salad">
+        <p>Salad</p>
+      </div>
+    </div>
+    <div id="food-details" class="food-details">
+      <!-- Food details will display dynamically here -->
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Designed by Visves</p>
+  </footer>
+  <script>
+    function showDetails(name, imgSrc) {
+      const details = document.getElementById('food-details');
+      details.innerHTML = `
+        <h3>${name}</h3>
+        <img src="${imgSrc}" alt="${name}" style="width:300px; height:auto; margin-top:10px;">
+      `;
+    }
+  </script>
+</body>
+</html>
