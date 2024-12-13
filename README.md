@@ -422,6 +422,6 @@ footer {
 ![alt text](<Screenshot (25).png>)
 ![alt text](<Screenshot (26).png>)
 ![alt text](<Screenshot (27).png>)
-![alt text](<Screenshot (29).png>)
+![alt text](one-1.jpg)
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
